@@ -1,0 +1,14 @@
+{
+  "name": "mundigest-redesign",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Propuesta funcional de rediseño web y asistente de citas para MundiGest",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "check": "node --check server.js && node --check public/app.js && node --check api/appointments.js && node --check api/health.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

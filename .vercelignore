@@ -1,0 +1,7 @@
+.git
+.vercel
+node_modules
+data/*.jsonl
+data/*.csv
+*.log
+.DS_Store

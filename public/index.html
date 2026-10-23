@@ -1,0 +1,336 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#b9151b">
+  <meta name="description" content="MundiGest, gestores administrativos colegiados en Sant Feliu de Guíxols. Extranjería, tráfico, fiscalidad, laboral y trámites administrativos.">
+  <title>MundiGest | Tus trámites, bien hechos</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/manrope-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="styles.css?v=20261023-2">
+  <script src="app.js?v=20261023-2" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <svg class="svg-sprite" aria-hidden="true">
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+    <symbol id="i-arrow-up" viewBox="0 0 24 24"><path d="M7 17 17 7M7 7h10v10"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.4 19.4 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.4 2.1L8.1 10a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.9.6 2.9.7a2 2 0 0 1 1.6 1.9Z"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 22s8-3.5 8-10V5l-8-3-8 3v7c0 6.5 8 10 8 10Z"/><path d="m8.5 12 2.2 2.2 4.8-5"/></symbol>
+    <symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></symbol>
+    <symbol id="i-passport" viewBox="0 0 24 24"><rect x="5" y="2" width="14" height="20" rx="2"/><circle cx="12" cy="10" r="3"/><path d="M9 10h6M12 7a6 6 0 0 1 0 6M12 7a6 6 0 0 0 0 6M9 17h6"/></symbol>
+    <symbol id="i-car" viewBox="0 0 24 24"><path d="m5 11 1.5-4.5A2 2 0 0 1 8.4 5h7.2a2 2 0 0 1 1.9 1.5L19 11M3 13a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v5H3v-5Z"/><path d="M5 18v2M19 18v2M7 14h.01M17 14h.01"/></symbol>
+    <symbol id="i-calculator" viewBox="0 0 24 24"><rect x="4" y="2" width="16" height="20" rx="2"/><path d="M8 6h8M8 11h.01M12 11h.01M16 11h.01M8 15h.01M12 15h.01M16 15h.01M8 19h.01M12 19h.01M16 19h.01"/></symbol>
+    <symbol id="i-briefcase" viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V4h8v3M3 12h18M10 12v2h4v-2"/></symbol>
+    <symbol id="i-certificate" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M7 9h6M7 13h4M15 18v4l2-1 2 1v-4"/><circle cx="17" cy="13" r="2"/></symbol>
+    <symbol id="i-file" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><path d="M14 2v6h6M8 13h8M8 17h6"/></symbol>
+    <symbol id="i-chat" viewBox="0 0 24 24"><path d="M21 11.5a8.5 8.5 0 0 1-9 8.5 9.5 9.5 0 0 1-4-.9L3 21l1.8-4.5A8.5 8.5 0 1 1 21 11.5Z"/><path d="M8 12h.01M12 12h.01M16 12h.01"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+    <symbol id="i-reset" viewBox="0 0 24 24"><path d="M3 12a9 9 0 1 0 3-6.7L3 8"/><path d="M3 3v5h5"/></symbol>
+    <symbol id="i-chevron" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></symbol>
+    <symbol id="i-send" viewBox="0 0 24 24"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></symbol>
+    <symbol id="i-building" viewBox="0 0 24 24"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 9h.01M15 9h.01M9 13h.01M15 13h.01M10 21v-4h4v4"/></symbol>
+  </svg>
+
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <p><span class="status-dot"></span> Atención presencial y telemática</p>
+      <div class="topbar-links">
+        <a href="tel:+34872270170"><svg><use href="#i-phone"/></svg>872 270 170</a>
+        <a href="mailto:info@mundigest.com"><svg><use href="#i-mail"/></svg>info@mundigest.com</a>
+        <span class="topbar-hours"><svg><use href="#i-clock"/></svg>L–V · 9:30–13:00 / 15:30–19:00</span>
+      </div>
+    </div>
+  </div>
+
+  <header class="site-header" id="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#inicio" aria-label="MundiGest, ir al inicio">
+        <img src="assets/mundigest-logo.png" alt="MundiGest, tràmits i gestions" width="367" height="161">
+      </a>
+      <button class="menu-toggle icon-button" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Abrir menú">
+        <svg><use href="#i-menu"/></svg>
+      </button>
+      <nav class="main-nav" id="main-nav" aria-label="Navegación principal">
+        <a href="#servicios">Servicios</a>
+        <a href="#como-funciona">Cómo funciona</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+      <button class="button button-primary nav-cta" type="button" data-open-chat>
+        Pedir cita <svg><use href="#i-arrow"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <section class="hero" id="inicio">
+      <div class="hero-orbit orbit-one"></div>
+      <div class="hero-orbit orbit-two"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow"><span></span>Gestoría administrativa en Sant Feliu de Guíxols</p>
+          <h1>Tus trámites,<br>bien hechos.<br><em>Tu tiempo, para ti.</em></h1>
+          <p class="hero-lead">Nos ocupamos de la burocracia para que tú no tengas que hacerlo. Asesoramiento profesional y trato cercano para particulares, autónomos y empresas.</p>
+          <div class="hero-actions">
+            <button class="button button-primary button-large" type="button" data-open-chat>
+              Pedir cita <svg><use href="#i-arrow"/></svg>
+            </button>
+            <a class="button button-ghost button-large" href="#servicios">Ver servicios</a>
+          </div>
+          <p class="microcopy"><svg><use href="#i-check"/></svg>Solicitud guiada en 2 minutos · Sin compromiso</p>
+        </div>
+
+        <div class="hero-visual" aria-label="Vista previa del asistente de citas">
+          <div class="paper-card paper-back" aria-hidden="true"></div>
+          <div class="assistant-preview">
+            <div class="preview-header">
+              <div class="assistant-avatar">MG<span></span></div>
+              <div><strong>Asistente MundiGest</strong><small>Prepara tu cita, paso a paso</small></div>
+              <span class="preview-time">2 min</span>
+            </div>
+            <div class="preview-body">
+              <div class="preview-day">EMPECEMOS</div>
+              <div class="bubble-preview">Hola, ¿en qué podemos ayudarte?</div>
+              <div class="preview-chips" aria-hidden="true">
+                <span>Extranjería</span><span>Vehículos</span><span>Otro trámite</span>
+              </div>
+              <div class="bubble-preview bubble-user">Necesito cambiar el titular de mi coche</div>
+              <div class="bubble-preview">Perfecto. Te haré unas preguntas básicas para organizar tu solicitud.</div>
+              <div class="preview-summary">
+                <svg><use href="#i-file"/></svg>
+                <div><small>Tu solicitud, bien organizada</small><strong>Servicio · Contacto · Preferencia</strong></div>
+                <svg class="summary-check"><use href="#i-check"/></svg>
+              </div>
+            </div>
+            <button class="preview-action" type="button" data-open-chat>
+              Iniciar mi solicitud <svg><use href="#i-arrow"/></svg>
+            </button>
+          </div>
+          <div class="floating-note"><svg><use href="#i-shield"/></svg><span><strong>Colegiados COGAC</strong>N.º 3916</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="trust-strip" aria-label="Ventajas de MundiGest">
+      <div class="container trust-grid">
+        <div><svg><use href="#i-shield"/></svg><p><strong>Gestores colegiados</strong><span>Garantía y rigor profesional</span></p></div>
+        <div><svg><use href="#i-user"/></svg><p><strong>Atención personalizada</strong><span>Hablamos claro, sin tecnicismos</span></p></div>
+        <div><svg><use href="#i-building"/></svg><p><strong>Para ti o tu empresa</strong><span>Particulares, autónomos y empresas</span></p></div>
+      </div>
+    </section>
+
+    <section class="section services" id="servicios">
+      <div class="container">
+        <div class="section-heading heading-row">
+          <div>
+            <p class="eyebrow"><span></span>Nuestros servicios</p>
+            <h2>¿Qué necesitas gestionar?</h2>
+          </div>
+          <p>Cuéntanos qué trámite tienes entre manos.<br>Nosotros te diremos cómo resolverlo.</p>
+        </div>
+        <div class="services-grid">
+          <button class="service-card" type="button" data-service="extranjeria">
+            <span class="service-number">01</span><span class="service-icon"><svg><use href="#i-passport"/></svg></span>
+            <span class="service-title">Extranjería y nacionalidad</span>
+            <span class="service-desc">Residencia, arraigos, reagrupación familiar y nacionalidad española.</span>
+            <span class="service-link">Ver trámites <svg><use href="#i-arrow-up"/></svg></span>
+          </button>
+          <button class="service-card" type="button" data-service="vehiculos">
+            <span class="service-number">02</span><span class="service-icon"><svg><use href="#i-car"/></svg></span>
+            <span class="service-title">Vehículos · DGT</span>
+            <span class="service-desc">Cambios de titularidad, informes, duplicados, matriculaciones y bajas.</span>
+            <span class="service-link">Ver trámites <svg><use href="#i-arrow-up"/></svg></span>
+          </button>
+          <button class="service-card" type="button" data-service="fiscal">
+            <span class="service-number">03</span><span class="service-icon"><svg><use href="#i-calculator"/></svg></span>
+            <span class="service-title">Gestión fiscal</span>
+            <span class="service-desc">Renta, impuestos trimestrales y requerimientos ante Hacienda.</span>
+            <span class="service-link">Ver trámites <svg><use href="#i-arrow-up"/></svg></span>
+          </button>
+          <button class="service-card" type="button" data-service="laboral">
+            <span class="service-number">04</span><span class="service-icon"><svg><use href="#i-briefcase"/></svg></span>
+            <span class="service-title">Laboral y contable</span>
+            <span class="service-desc">Nóminas, seguros sociales, contratos y contabilidad de tu empresa.</span>
+            <span class="service-link">Ver trámites <svg><use href="#i-arrow-up"/></svg></span>
+          </button>
+          <button class="service-card" type="button" data-service="certificados">
+            <span class="service-number">05</span><span class="service-icon"><svg><use href="#i-certificate"/></svg></span>
+            <span class="service-title">Certificados digitales</span>
+            <span class="service-desc">Emitimos tu certificado electrónico desde nuestra oficina.</span>
+            <span class="service-link">Ver trámites <svg><use href="#i-arrow-up"/></svg></span>
+          </button>
+          <button class="service-card" type="button" data-service="administrativos">
+            <span class="service-number">06</span><span class="service-icon"><svg><use href="#i-file"/></svg></span>
+            <span class="service-title">Otros trámites</span>
+            <span class="service-desc">Contratos, prestaciones, alegaciones y gestiones ante administraciones.</span>
+            <span class="service-link">Ver trámites <svg><use href="#i-arrow-up"/></svg></span>
+          </button>
+        </div>
+        <div class="services-help">
+          <p><strong>¿No encuentras tu trámite?</strong> No pasa nada, te ayudamos a identificarlo.</p>
+          <button class="text-link" type="button" data-open-chat data-service-preset="otro">Contarnos mi caso <svg><use href="#i-arrow"/></svg></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section process" id="como-funciona">
+      <div class="container process-grid">
+        <div class="process-copy">
+          <p class="eyebrow eyebrow-light"><span></span>Así de sencillo</p>
+          <h2>Primero te escuchamos.<br>Después, nos ponemos manos a la obra.</h2>
+          <p class="process-intro">El asistente recoge solo la información básica. Una persona del equipo revisa tu caso y te contacta para confirmar la cita.</p>
+          <ol class="steps-list">
+            <li><span>1</span><div><h3>Cuéntanos qué necesitas</h3><p>Selecciona el servicio y resume tu consulta. No necesitas enviar documentos.</p></div></li>
+            <li><span>2</span><div><h3>Revisamos tu solicitud</h3><p>Recibimos tus datos ordenados para entender el trámite antes de hablar contigo.</p></div></li>
+            <li><span>3</span><div><h3>Confirmamos la cita</h3><p>Te contactamos para acordar el día, la hora y la documentación necesaria.</p></div></li>
+          </ol>
+          <button class="button button-light" type="button" data-open-chat>Preparar mi solicitud <svg><use href="#i-arrow"/></svg></button>
+        </div>
+        <div class="request-example-wrap">
+          <div class="request-example">
+            <div class="request-top"><span>SOLICITUD ORGANIZADA</span><span class="request-status"><i></i>Pendiente de revisión</span></div>
+            <div class="request-person"><div class="request-avatar">AM</div><div><strong>Anna M.</strong><small>Solicitud #MG-0248</small></div><svg><use href="#i-file"/></svg></div>
+            <dl>
+              <div><dt>Servicio</dt><dd>Vehículos · DGT</dd></div>
+              <div><dt>Tipo de cliente</dt><dd>Particular</dd></div>
+              <div><dt>Consulta</dt><dd>Cambio de titularidad de un turismo</dd></div>
+              <div><dt>Preferencia</dt><dd>Esta semana · Por la mañana</dd></div>
+              <div><dt>Contacto</dt><dd>Teléfono</dd></div>
+            </dl>
+            <div class="request-footer"><svg><use href="#i-check"/></svg><span>Todo lo básico, en una sola solicitud</span></div>
+          </div>
+          <p class="example-caption">Ejemplo ilustrativo de cómo recibiría el equipo una solicitud.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section about" id="nosotros">
+      <div class="container about-grid">
+        <div class="about-visual">
+          <div class="about-red-block"><span>Mundi</span><strong>GEST</strong><small>tràmits & gestions</small></div>
+          <div class="about-badge"><img src="assets/cogac-badge.png" alt="Gestor Administrativo Colegiado" width="273" height="185"></div>
+          <div class="about-stamp"><strong>3916</strong><span>Colegiados<br>COGAC</span></div>
+        </div>
+        <div class="about-copy">
+          <p class="eyebrow"><span></span>Profesionalidad y cercanía</p>
+          <h2>Tu gestor de confianza,<br>también cerca de casa.</h2>
+          <p>En MundiGest somos gestores administrativos colegiados en el Colegio Oficial de Gestores Administrativos de Cataluña. Ofrecemos atención personalizada en gestiones y trámites administrativos.</p>
+          <p>Te acompañamos durante todo el proceso, explicándote cada paso con claridad y representándote ante las administraciones cuando lo necesites.</p>
+          <ul class="check-list">
+            <li><svg><use href="#i-check"/></svg>Asesoramiento adaptado a tu situación</li>
+            <li><svg><use href="#i-check"/></svg>Gestión presencial y telemática</li>
+            <li><svg><use href="#i-check"/></svg>Máxima garantía profesional y rigor</li>
+          </ul>
+          <a class="text-link" href="#contacto">Conócenos y ven a vernos <svg><use href="#i-arrow"/></svg></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section faq" id="preguntas">
+      <div class="container faq-grid">
+        <div class="faq-heading">
+          <p class="eyebrow"><span></span>Antes de tu cita</p>
+          <h2>Preguntas<br>frecuentes</h2>
+          <p>¿Te queda alguna duda?</p>
+          <a href="tel:+34624652048" class="text-link">Llámanos al 624 652 048 <svg><use href="#i-arrow"/></svg></a>
+        </div>
+        <div class="accordion">
+          <div class="faq-item">
+            <button type="button" aria-expanded="true" aria-controls="faq-a1" id="faq-q1"><span>¿La solicitud del asistente confirma una cita?</span><svg><use href="#i-chevron"/></svg></button>
+            <div class="faq-answer" id="faq-a1" role="region" aria-labelledby="faq-q1"><p>No. El asistente prepara y envía tu solicitud. Después, el equipo de MundiGest te contactará para confirmar el día y la hora contigo.</p></div>
+          </div>
+          <div class="faq-item">
+            <button type="button" aria-expanded="false" aria-controls="faq-a2" id="faq-q2"><span>¿Qué documentación tengo que llevar?</span><svg><use href="#i-chevron"/></svg></button>
+            <div class="faq-answer" id="faq-a2" role="region" aria-labelledby="faq-q2" hidden><p>Depende de cada trámite. Al confirmar tu cita te indicaremos exactamente qué documentación necesitas, para evitar desplazamientos innecesarios.</p></div>
+          </div>
+          <div class="faq-item">
+            <button type="button" aria-expanded="false" aria-controls="faq-a3" id="faq-q3"><span>¿Podéis hacer trámites de forma telemática?</span><svg><use href="#i-chevron"/></svg></button>
+            <div class="faq-answer" id="faq-a3" role="region" aria-labelledby="faq-q3" hidden><p>Sí. Muchos procedimientos pueden tramitarse telemáticamente. Revisaremos tu caso y te explicaremos las opciones disponibles.</p></div>
+          </div>
+          <div class="faq-item">
+            <button type="button" aria-expanded="false" aria-controls="faq-a4" id="faq-q4"><span>¿Atendéis a empresas y autónomos?</span><svg><use href="#i-chevron"/></svg></button>
+            <div class="faq-answer" id="faq-a4" role="region" aria-labelledby="faq-q4" hidden><p>Sí. Trabajamos con particulares, autónomos y empresas en materia fiscal, laboral, contable y administrativa.</p></div>
+          </div>
+          <div class="faq-item">
+            <button type="button" aria-expanded="false" aria-controls="faq-a5" id="faq-q5"><span>¿Puedo pedir cita por teléfono?</span><svg><use href="#i-chevron"/></svg></button>
+            <div class="faq-answer" id="faq-a5" role="region" aria-labelledby="faq-q5" hidden><p>Claro. Puedes llamar al <a href="tel:+34872270170">872 270 170</a> o al <a href="tel:+34624652048">624 652 048</a> en nuestro horario de atención.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contacto">
+      <div class="container contact-grid">
+        <div class="contact-main">
+          <p class="eyebrow eyebrow-light"><span></span>Hablemos de tu trámite</p>
+          <h2>¿Empezamos?</h2>
+          <p>Cuéntanos qué necesitas y te ayudaremos a dar el siguiente paso.</p>
+          <button class="button button-white button-large" type="button" data-open-chat>Pedir cita ahora <svg><use href="#i-arrow"/></svg></button>
+        </div>
+        <div class="contact-details">
+          <a href="tel:+34872270170"><svg><use href="#i-phone"/></svg><span><small>Llámanos</small><strong>872 270 170</strong><em>También: 624 652 048</em></span></a>
+          <a href="mailto:info@mundigest.com"><svg><use href="#i-mail"/></svg><span><small>Escríbenos</small><strong>info@mundigest.com</strong></span></a>
+          <a href="https://www.google.com/maps/search/?api=1&query=Rambla+de+la+Generalitat+45+17220+Sant+Feliu+de+Guixols" target="_blank" rel="noopener"><svg><use href="#i-pin"/></svg><span><small>Ven a vernos</small><strong>Rambla de la Generalitat, 45</strong><em>17220 · Sant Feliu de Guíxols</em></span><svg class="contact-arrow"><use href="#i-arrow-up"/></svg></a>
+          <div class="contact-hours"><svg><use href="#i-clock"/></svg><span><small>Horario</small><strong>Lunes a viernes</strong><em>9:30–13:00 · 15:30–19:00</em></span></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-main">
+      <a class="brand footer-brand" href="#inicio"><img src="assets/mundigest-logo.png" alt="MundiGest" width="367" height="161"></a>
+      <p>Gestores administrativos colegiados.<br>Trámites claros, trato cercano.</p>
+      <div class="footer-nav"><a href="#servicios">Servicios</a><a href="#nosotros">Nosotros</a><a href="#preguntas">Preguntas frecuentes</a><a href="#contacto">Contacto</a></div>
+      <button class="button button-primary" type="button" data-open-chat>Pedir cita <svg><use href="#i-arrow"/></svg></button>
+    </div>
+    <div class="container footer-bottom">
+      <span>© <span id="current-year">2026</span> MundiGest. Todos los derechos reservados.</span>
+      <div><a href="aviso-legal.html">Aviso legal</a><a href="privacidad.html">Privacidad</a><a href="cookies.html">Cookies</a></div>
+    </div>
+  </footer>
+
+  <div class="chat-overlay" id="chat-overlay" hidden></div>
+  <section class="chat-panel" id="chat-panel" role="dialog" aria-modal="true" aria-labelledby="chat-title" hidden>
+    <header class="chat-header">
+      <div class="assistant-avatar">MG<span></span></div>
+      <div class="chat-header-title"><strong id="chat-title">Asistente MundiGest</strong><small id="chat-subtitle">Solicitud guiada · Unos 2 minutos</small></div>
+      <button class="chat-icon-button" id="chat-reset" type="button" aria-label="Reiniciar solicitud" title="Reiniciar solicitud"><svg><use href="#i-reset"/></svg></button>
+      <button class="chat-icon-button" id="chat-close" type="button" aria-label="Cerrar asistente"><svg><use href="#i-close"/></svg></button>
+    </header>
+    <div class="chat-progress" id="chat-progress" hidden>
+      <div><span id="progress-label">Paso 1 de 5</span><span id="progress-name">Servicio</span></div>
+      <div class="progress-track"><span id="progress-bar"></span></div>
+    </div>
+    <div class="chat-messages" id="chat-messages" aria-live="polite" aria-relevant="additions"></div>
+    <div class="chat-composer" id="chat-composer"></div>
+    <footer class="chat-privacy"><svg><use href="#i-shield"/></svg>No envíes DNI, documentos ni datos bancarios por este chat.</footer>
+  </section>
+
+  <button class="chat-launcher" id="chat-launcher" type="button" data-open-help aria-label="Abrir ayuda, orientación y contacto">
+    <span class="launcher-icon"><svg><use href="#i-chat"/></svg><i></i></span>
+    <span class="launcher-text"><strong>¿Te ayudamos?</strong><small>Dudas, trámites y contacto</small></span>
+  </button>
+
+  <dialog class="service-dialog" id="service-dialog" aria-labelledby="dialog-title">
+    <button class="dialog-close icon-button" type="button" aria-label="Cerrar detalle"><svg><use href="#i-close"/></svg></button>
+    <div id="dialog-icon" class="dialog-icon"><svg><use href="#i-file"/></svg></div>
+    <p class="eyebrow"><span></span>Servicios MundiGest</p>
+    <h2 id="dialog-title">Servicio</h2>
+    <p id="dialog-description"></p>
+    <ul id="dialog-list" class="check-list"></ul>
+    <button class="button button-primary button-large" id="dialog-cta" type="button">Pedir cita para este trámite <svg><use href="#i-arrow"/></svg></button>
+    <p class="dialog-note">Te confirmaremos la documentación necesaria antes de la cita.</p>
+  </dialog>
+
+  <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+</body>
+</html>
